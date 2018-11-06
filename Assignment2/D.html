@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Second One</title>
+  <style>
+    label.a{
+      background-color:violet;
+      color:white;
+      font-style:italic;
+      font-size:15px;
+    }
+    label.b{
+      background-color:green;
+      color:yellow;
+      font-style:oblique;
+      font-size:15px;
+    }
+     label.c{
+      font-style:italic;
+      font-size:15px;
+    }
+    input{
+      color:Blue;
+      font-size:16px;
+    }
+    textarea{
+       color:Blue;
+      font-size:16px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+        <label class="a" for="uname">Username</label><br>
+  <input type="text" placeholder="Enter Username"><br>
+        <label class="a" for="passw">Password</label><br>
+  <input type="password" placeholder="Enter Password"> <br>
+       <label class="b" for="save">Save Password</label>
+  <input type="checkbox"> <br>
+        <label class="b" for="uname">Choice 1</label>
+    <input type="radio" /><br>
+        <label class="b" for="uname">Choice 2</label>
+    <input type="radio" /><br>
+        <label class="b" for="uname">Choice 3</label>
+    <input type="radio" /> <br><br/>
+         <label class="a" for="uname">Sex</label> <select>
+                <option value="Male ">Male</option>
+                <option value="Female">Female</option>
+                <option value="Male_Female">Male-Female</option>
+              </select> <br><br/>
+        <textarea placeholder="Write something" style="width:280px;height:70px"></textarea>
+        <br>
+       <button type="button"><label class="c" for="uname">Submit</label></button> 
+       <button type="reset"><label class="c" for="uname">Reset</label></button>
+  </form>
+</body>
+</html>

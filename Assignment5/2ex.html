@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Assignment A</title>
+
+    <style>body, html {
+            
+            background-color: #92a8d1;
+        }
+
+        .header{
+            text-align: center;
+            margin-top: 13px;
+            
+        }
+        .img1{
+            margin-top: 15px;
+            border: 1px solid black;
+            border-radius: 25px;
+            box-shadow: 2px 6px #888888;
+            
+            transform: rotate(8deg);
+        }
+        .img2{
+        float:left;
+      margin-left: -15px;
+        }
+        .flex-container {
+            
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: nowrap;*/
+}
+
+.flex-container > div {
+
+  width: 450px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  flex-direction: column;
+  margin: 6.5px;
+  
+  
+ /* -webkit-column-count: 5; /* Chrome, Safari, Opera */
+   /* -moz-column-count: 5; */ /* Firefox */
+   /* column-count: 5;*/
+
+  /*  -webkit-column-gap: 40px; *//* Chrome, Safari, Opera */
+   /* -moz-column-gap: 40px; *//* Firefox */
+  /*  column-gap: 100px;*/
+
+}
+h2{
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-style: italic;
+}
+h3{
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+.pquote {
+ 
+    float: right;
+    width: 80px;
+    padding: 13px;
+    margin: 0 2px 2px 0;
+    color: red;
+    font-size:20px;
+}
+p{
+    text-align: justify;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+  
+}
+figcaption{
+    font-family:"Times New Roman", Times, serif;
+    font-style: bold;
+}
+p.a{
+    margin-left: 20px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-style: italic;
+}
+p.b{
+    margin-left: 20px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-style: italic;
+}
+p.c{
+    font-family:"Times New Roman", Times, serif;
+    font-style: bold;
+}
+#gallery {
+	display: flex;
+	flex-flow: column wrap;
+}
+blockquote {
+    margin: 0; /* gets rid of the default blockquote margin */
+}
+div#Context {
+flex:1 100%;
+order:2;
+}
+
+div#photos {   
+order:1;
+flex:1 100%;
+}
+
+
+@media all and (max-width: 800px){
+    
+	div#Context {
+order:1;
+}
+div#photos {
+
+order:2;
+}
+.flex-container {
+            margin-left: 130px;
+            display: flex;
+            flex-direction: column;
+            /*flex-wrap: nowrap;*/
+          }
+          footer#LowestText{
+            margin-left: 130px; 
+          }
+}
+footer{
+    margin-left: 340px;
+    font-size: 20px;
+    font-family:"Times New Roman", Times, serif;
+    font-style: underline;
+}
+    </style>
+
+</head>
+
+<body>
+        <div class="header">
+                <img class="img1" src="12920541_1345368955489850_5587934409579916708_n-2-960x410.jpg"  alt="imageForHeadLine" width="400px" height="170px" />
+                <h3>Kittens</h3>
+            </div>
+        <div class="flex-container">
+                <div class="paragraphs" id="Context">
+                       
+                        <h2>Paragraph1</h2>
+              <p>
+                   
+              </p>
+              <aside class="pquote">
+                    <blockquote>
+                       <p class="a">Cute kittens</p>   
+                        </blockquote>
+                    </aside>
+                    <p class="c">
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:      
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    <img class="img2" src="580b57fbd9996e24bc43bb8e.png" width="150px" height="200px"  alt="ImageForWrapping "/>
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:      
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+              </p>
+          </div>
+          <div class="paragraphs" id="Context">
+                <h2>Paragraph2</h2>
+                <p class="c">
+                      To avoid that wide images overflow the figure,
+                      and if you know the width of all images in the document, 
+                      you can add a minimum width to the DIV, e.g., like this:
+                      To avoid that wide images overflow the figure,</p>
+                <aside class="pquote">
+                        <blockquote>
+                                <p class="b">Sweet kittens</p>  
+                            </blockquote>
+                        </aside>
+                        <p class="c">
+                      and if you know the width of all images in the document,            
+                      you can add a minimum width to the DIV, e.g., like this:
+                      To avoid that wide images overflow the figure,
+                      and if you know the width of all images in the document, 
+                      you can add a minimum width to the DIV, e.g., like this:
+                      To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, </p>
+                    
+                    <img class="img2" src="chaton_1-33648.png" width="150px" height="200px"  alt="ImageForWrapping2" />   
+            <p class="c">
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:      
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                </p>
+            </div>
+            <div class="paragraphs" id="Context">
+                    <h2>Paragraph3</h2>
+                    <p class="c">
+                          To avoid that wide images overflow the figure,
+                          and if you know the width of all images in the document, 
+                          you can add a minimum width to the DIV, e.g., like this:
+                          To avoid that wide images overflow the figure,
+                          and if you know the width of all images in the document, 
+                          you can add a minimum width to the DIV, e.g., like this:
+                          To avoid that wide images overflow the figure,
+                          and if you know the width of all images in the document, 
+                          you can add a minimum width to the DIV, e.g., like this:
+                          To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:      
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    </p>
+                </div>
+                <div class="paragraphs" id="Context">
+                        <h2>Paragraph4</h2>
+                        <p class="c">
+                              To avoid that wide images overflow the figure,
+                              and if you know the width of all images in the document, 
+                              you can add a minimum width to the DIV, e.g., like this:
+                              To avoid that wide images overflow the figure,
+                              and if you know the width of all images in the document, 
+                              you can add a minimum width to the DIV, e.g., like this:
+                              To avoid that wide images overflow the figure,
+                              and if you know the width of all images in the document, 
+                              you can add a minimum width to the DIV, e.g., like this:
+                              To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:      
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                    you can add a minimum width to the DIV, e.g., like this:
+                    To avoid that wide images overflow the figure,
+                    and if you know the width of all images in the document, 
+                    you can add a minimum width to the DIV, e.g., like this:
+                        </p>
+                    </div>
+            <div class="gallery" id="photos">
+            <figure>
+                    <p><img src="cat.png"
+                      width="136" height="200"
+                      alt="standingKitten">
+                    <figcaption>
+           1)A kitten is a juvenile cat. </figcaption>
+                  </figure>
+                  <figure>
+                        <p><img src="rode-kittens-transp-500.png"
+                          width="180" height="200"
+                          alt="SixKittens">
+                        <figcaption>2)A kitten is a juvenile cat.</figcaption>
+                      </figure>
+                      <figure>
+                            <p><img src="kittens-transparent-happy-3.png"
+                                width="180" height="200"
+                              alt="layingKitten">
+                            <figcaption>3) A kitten is a juvenile cat.</figcaption>
+                          </figure>
+                  </div>
+                  
+
+            
+                  
+        </div>
+        <footer id="LowestText">
+                <h1 class="b">Love animals,especially kittens!</h1>
+                </footer>
+
+
+
+</body>
+
+</html>
